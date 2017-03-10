@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~normalize.css';
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+
+html {
+  height: 100%;
+}
+
+body,
+app-root {
+  height: 100%;
+}

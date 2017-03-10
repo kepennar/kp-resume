@@ -1,0 +1,15 @@
+<md-sidenav-container class="container">
+  <md-sidenav #sidenav class="sidenav" >
+    SideNav
+  </md-sidenav>
+  <div class="sidenav-content">
+    <h1>
+      {{title}}
+    </h1>
+
+    <button md-raised-button (click)="sidenav.open()">
+      Angular Material works!
+      <md-icon>done</md-icon>
+    </button>
+  </div>
+</md-sidenav-container>
