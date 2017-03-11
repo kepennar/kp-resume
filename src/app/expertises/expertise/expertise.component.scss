@@ -1,0 +1,20 @@
+@import '../../../styles/colors';
+
+:host {
+  border-bottom: 1px solid $secondary-txt-color;
+  padding-bottom: 1em;
+
+  .category {
+    display: inline-flex;
+    vertical-align: middle;
+
+    .material-icons {
+      display: inline;
+      margin-right: 10px;
+    }
+  }
+
+  .tech {
+    display: inline-block;
+  }
+}

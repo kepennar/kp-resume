@@ -69,11 +69,11 @@
     webpack-merge "^2.4.0"
     zone.js "^0.7.2"
 
-"@angular/common@^2.4.0":
+"@angular/common@^>=4.0.0-beta <5.0.0":
   version "2.4.9"
   resolved "@angular-common-2.4.9.tgz#3094f973e18330526256dcd13fcf27609b7abc08"
 
-"@angular/compiler-cli@>=2.3.1 <5.0.0 || >=4.0.0-beta <5.0.0", "@angular/compiler-cli@^2.4.0":
+"@angular/compiler-cli@>=2.3.1 <5.0.0 || >=4.0.0-beta <5.0.0", "@angular/compiler-cli@^>=4.0.0-beta <5.0.0":
   version "2.4.9"
   resolved "@angular-compiler-cli-2.4.9.tgz#8ac4e28c12d2b09a10aabf9cb95c569844b90db3"
   dependencies:
@@ -81,49 +81,39 @@
     minimist "^1.2.0"
     reflect-metadata "^0.1.2"
 
-"@angular/compiler@>=2.3.1 <5.0.0 || >=4.0.0-beta <5.0.0", "@angular/compiler@^2.4.0":
+"@angular/compiler@>=2.3.1 <5.0.0 || >=4.0.0-beta <5.0.0", "@angular/compiler@^>=4.0.0-beta <5.0.0":
   version "2.4.9"
   resolved "@angular-compiler-2.4.9.tgz#ee159181c4013046598e1d176b45063bddb141f6"
 
-"@angular/core@>=2.3.1 <5.0.0 || >=4.0.0-beta <5.0.0", "@angular/core@^2.4.0":
+"@angular/core@>=2.3.1 <5.0.0 || >=4.0.0-beta <5.0.0", "@angular/core@^>=4.0.0-beta <5.0.0":
   version "2.4.9"
   resolved "@angular-core-2.4.9.tgz#85dca2afa4021be91512c97597702ac8d73092e6"
 
-"@angular/forms@^2.4.0":
-  version "2.4.9"
-  resolved "@angular-forms-2.4.9.tgz#a1ee9f403267fd78041f9ee77d1c9c24150e1d7c"
+"@angular/flex-layout@latest":
+  version "2.0.0-rc.1"
+  resolved "@angular-flex-layout-2.0.0-rc.1.tgz#96fa7f85b2c4bacf2784913a2d607e2ed23dc7f1"
 
-"@angular/http@^2.4.0":
+"@angular/http@^>=4.0.0-beta <5.0.0":
   version "2.4.9"
   resolved "@angular-http-2.4.9.tgz#a7de980d564ac25a497c5e822d2b941c1f143d48"
 
-"@angular/material@^2.0.0-beta.2":
-  version "2.0.0-beta.2"
-  resolved "@angular-material-2.0.0-beta.2.tgz#65ee8733990347b7518b7f42113e02e069dc109b"
-
-"@angular/platform-browser-dynamic@^2.4.0":
+"@angular/platform-browser-dynamic@^>=4.0.0-beta <5.0.0":
   version "2.4.9"
   resolved "@angular-platform-browser-dynamic-2.4.9.tgz#353b92e8670065ab5b1b6baea3a96928b174ee09"
 
-"@angular/platform-browser@^2.4.0":
+"@angular/platform-browser@^>=4.0.0-beta <5.0.0":
   version "2.4.9"
   resolved "@angular-platform-browser-2.4.9.tgz#936139a1e0d280394988473a8a11d922d768f89e"
 
-"@angular/router@^3.4.0":
+"@angular/router@^>=4.0.0-beta <5.0.0":
   version "3.4.9"
   resolved "@angular-router-3.4.9.tgz#2525384124140fefae20bf661262b611f28ffc92"
 
-"@angular/tsc-wrapped@0.5.2":
+"@angular/tsc-wrapped@0.5.2", "@angular/tsc-wrapped@>=0.5.0 <5.0.0 || >=4.0.0-beta <5.0.0":
   version "0.5.2"
   resolved "@angular-tsc-wrapped-0.5.2.tgz#2eddf472c467fcb334ea94deddaaa71990c5a482"
   dependencies:
     tsickle "^0.2"
-
-"@angular/tsc-wrapped@>=0.5.0 <5.0.0 || >=4.0.0-beta <5.0.0":
-  version "4.0.0-rc.2"
-  resolved "@angular-tsc-wrapped-4.0.0-rc.2.tgz#d7023d93f4576b6f776ffc7175ff760e7e133705"
-  dependencies:
-    tsickle "^0.21.0"
 
 "@ngtools/json-schema@1.0.5":
   version "1.0.5"
@@ -221,6 +211,12 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5
 
+animejs@^2.0.1:
+  version "2.0.1"
+  resolved animejs-2.0.1.tgz#7ab954809a23300a13c46ef5d690cdaf9ae80692
+  dependencies:
+    google-closure-compiler-js "^20170124.0.0"
+
 ansi-align@^1.1.0:
   version "1.1.0"
   resolved ansi-align-1.1.0.tgz#2f0c1658829739add5ebb15e6b0c6e3423f016ba
@@ -291,6 +287,10 @@ arr-flatten@^1.0.1:
   version "1.0.1"
   resolved arr-flatten-1.0.1.tgz#e5ffe54d45e19f32f216e91eb99c8ce892bb604b
 
+array-differ@^1.0.0:
+  version "1.0.0"
+  resolved array-differ-1.0.0.tgz#eff52e3758249d33be402b8bb8e564bb2b5d4031
+
 array-find-index@^1.0.1:
   version "1.0.2"
   resolved array-find-index-1.0.2.tgz#df010aa1287e164bbda6f9723b0a96a1ec4187a1
@@ -309,7 +309,7 @@ array-union@^1.0.1:
   dependencies:
     array-uniq "^1.0.1"
 
-array-uniq@^1.0.1:
+array-uniq@^1.0.1, array-uniq@^1.0.2:
   version "1.0.3"
   resolved array-uniq-1.0.3.tgz#af6ac877a25cc7f74e058894753858dfdb24fdb6
 
@@ -431,12 +431,18 @@ babel-messages@^6.23.0:
   dependencies:
     babel-runtime "^6.22.0"
 
-babel-runtime@^6.18.0, babel-runtime@^6.22.0:
+babel-runtime@^6.18.0, babel-runtime@^6.22.0, babel-runtime@^6.3.19:
   version "6.23.0"
   resolved babel-runtime-6.23.0.tgz#0a9489f144de70efb3ce4300accdb329e2fc543b
   dependencies:
     core-js "^2.4.0"
     regenerator-runtime "^0.10.0"
+
+babel-runtime@~6.3.19:
+  version "6.3.19"
+  resolved babel-runtime-6.3.19.tgz#f2db696c3c8c379881e2a53665e02187074dc681
+  dependencies:
+    core-js "^1.2.0"
 
 babel-template@^6.16.0:
   version "6.23.0"
@@ -504,6 +510,10 @@ bcrypt-pbkdf@^1.0.0:
   resolved bcrypt-pbkdf-1.0.1.tgz#63bc5dcb61331b92bc05fd528953c33462a06f8d
   dependencies:
     tweetnacl "^0.14.3"
+
+beeper@^1.0.0:
+  version "1.1.1"
+  resolved beeper-1.1.1.tgz#e6d5ea8c5dad001304a70b22638447f69cb2f809
 
 better-assert@~1.0.0:
   version "1.0.2"
@@ -828,7 +838,11 @@ cliui@^3.2.0:
     strip-ansi "^3.0.1"
     wrap-ansi "^2.0.0"
 
-clone@^1.0.2:
+clone-stats@^0.0.1:
+  version "0.0.1"
+  resolved clone-stats-0.0.1.tgz#b88f94a82cf38b8791d58046ea4029ad88ca99d1
+
+clone@^1.0.0, clone@^1.0.2:
   version "1.0.2"
   resolved clone-1.0.2.tgz#260b7a99ebb1edfe247538175f783243cb19d149
 
@@ -1003,6 +1017,24 @@ content-type@~1.0.2:
   version "1.0.2"
   resolved content-type-1.0.2.tgz#b7d113aee7a8dd27bd21133c4dc2529df1721eed
 
+contentful-sdk-core@~2.5.0:
+  version "2.5.0"
+  resolved contentful-sdk-core-2.5.0.tgz#e1cad6b7660654bb1095b385fd5abc225199273f
+  dependencies:
+    babel-runtime "^6.3.19"
+    follow-redirects "0.0.7"
+    lodash "^4.2.0"
+    qs "^6.1.0"
+
+contentful@^3.8.1:
+  version "3.8.1"
+  resolved contentful-3.8.1.tgz#ba532c0032a165c22a251ce964a7f39d4011c21b
+  dependencies:
+    babel-runtime "~6.3.19"
+    contentful-sdk-core "~2.5.0"
+    json-stringify-safe "~5.0.1"
+    lodash "~4.2.0"
+
 convert-source-map@^1.3.0:
   version "1.4.0"
   resolved convert-source-map-1.4.0.tgz#e3dad195bf61bfe13a7a3c73e9876ec14a0268f3
@@ -1014,6 +1046,10 @@ cookie-signature@1.0.6:
 cookie@0.3.1:
   version "0.3.1"
   resolved cookie-0.3.1.tgz#e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb
+
+core-js@^1.2.0:
+  version "1.2.7"
+  resolved core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636
 
 core-js@^2.2.0, core-js@^2.4.0, core-js@^2.4.1:
   version "2.4.1"
@@ -1182,8 +1218,8 @@ cssesc@^0.1.0:
     postcss-zindex "^2.0.1"
 
 csso@~2.3.1:
-  version "2.3.1"
-  resolved csso-2.3.1.tgz#4f8d91a156f2f1c2aebb40b8fb1b5eb83d94d3b9
+  version "2.3.2"
+  resolved csso-2.3.2.tgz#ddd52c587033f49e94b71fc55569f252e8ff5f85
   dependencies:
     clap "^1.0.9"
     source-map "^0.5.3"
@@ -1207,6 +1243,10 @@ dashdash@^1.12.0:
 date-now@^0.1.4:
   version "0.1.4"
   resolved date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b
+
+dateformat@^2.0.0:
+  version "2.0.0"
+  resolved dateformat-2.0.0.tgz#2743e3abb5c3fc2462e527dca445e04e9f4dee17
 
 debug@*, debug@2, debug@2.6.1, debug@^2.1.3, debug@^2.2.0:
   version "2.6.1"
@@ -1371,6 +1411,12 @@ dot-prop@^3.0.0:
   resolved dot-prop-3.0.0.tgz#1b708af094a49c9a0e7dbcad790aba539dac1177
   dependencies:
     is-obj "^1.0.0"
+
+duplexer2@0.0.2:
+  version "0.0.2"
+  resolved duplexer2-0.0.2.tgz#c614dcf67e2fb14995a91711e5a617e8a60a31db
+  dependencies:
+    readable-stream "~1.1.9"
 
 duplexer2@^0.1.4:
   version "0.1.4"
@@ -1638,6 +1684,13 @@ extsprintf@1.0.2:
   version "1.0.2"
   resolved extsprintf-1.0.2.tgz#e1080e0658e300b06294990cc70e1502235fd550
 
+fancy-log@^1.1.0:
+  version "1.3.0"
+  resolved fancy-log-1.3.0.tgz#45be17d02bb9917d60ccffd4995c999e6c8c9948
+  dependencies:
+    chalk "^1.1.1"
+    time-stamp "^1.0.0"
+
 fastparse@^1.1.1:
   version "1.1.1"
   resolved fastparse-1.1.1.tgz#d1e2643b38a94d7583b479060e6c4affc94071f8
@@ -1719,6 +1772,13 @@ findup-sync@~0.3.0:
 flatten@^1.0.2:
   version "1.0.2"
   resolved flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782
+
+follow-redirects@0.0.7:
+  version "0.0.7"
+  resolved follow-redirects-0.0.7.tgz#34b90bab2a911aa347571da90f22bd36ecd8a919
+  dependencies:
+    debug "^2.2.0"
+    stream-consume "^0.1.0"
 
 for-in@^1.0.1:
   version "1.0.2"
@@ -1905,6 +1965,20 @@ globule@^1.0.0:
     lodash "~4.16.4"
     minimatch "~3.0.2"
 
+glogg@^1.0.0:
+  version "1.0.0"
+  resolved glogg-1.0.0.tgz#7fe0f199f57ac906cf512feead8f90ee4a284fc5
+  dependencies:
+    sparkles "^1.0.0"
+
+google-closure-compiler-js@^20170124.0.0:
+  version "20170124.0.0"
+  resolved google-closure-compiler-js-20170124.0.0.tgz#cd77291a19a4158eb41fb241688a5e523e250364
+  dependencies:
+    gulp-util "^3.0.7"
+    minimist "^1.2.0"
+    webpack-core "^0.6.8"
+
 got@^5.0.0:
   version "5.7.1"
   resolved got-5.7.1.tgz#5f81635a61e4a6589f180569ea4e381680a51f35
@@ -1932,6 +2006,35 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6:
 "graceful-readlink@>= 1.0.0":
   version "1.0.1"
   resolved graceful-readlink-1.0.1.tgz#4cafad76bc62f02fa039b2f94e9a3dd3a391a725
+
+gulp-util@^3.0.7:
+  version "3.0.8"
+  resolved gulp-util-3.0.8.tgz#0054e1e744502e27c04c187c3ecc505dd54bbb4f
+  dependencies:
+    array-differ "^1.0.0"
+    array-uniq "^1.0.2"
+    beeper "^1.0.0"
+    chalk "^1.0.0"
+    dateformat "^2.0.0"
+    fancy-log "^1.1.0"
+    gulplog "^1.0.0"
+    has-gulplog "^0.1.0"
+    lodash._reescape "^3.0.0"
+    lodash._reevaluate "^3.0.0"
+    lodash._reinterpolate "^3.0.0"
+    lodash.template "^3.0.0"
+    minimist "^1.1.0"
+    multipipe "^0.1.2"
+    object-assign "^3.0.0"
+    replace-ext "0.0.1"
+    through2 "^2.0.0"
+    vinyl "^0.5.0"
+
+gulplog@^1.0.0:
+  version "1.0.0"
+  resolved gulplog-1.0.0.tgz#e28c4d45d05ecbbed818363ce8f9c5926229ffe5
+  dependencies:
+    glogg "^1.0.0"
 
 handle-thing@^1.2.4:
   version "1.2.5"
@@ -1985,6 +2088,12 @@ has-cors@1.1.0:
 has-flag@^1.0.0:
   version "1.0.0"
   resolved has-flag-1.0.0.tgz#9d9e793165ce017a00f00418c43f942a7b1d11fa
+
+has-gulplog@^0.1.0:
+  version "0.1.0"
+  resolved has-gulplog-0.1.0.tgz#6414c82913697da51590397dafb12f22967811ce
+  dependencies:
+    sparkles "^1.0.0"
 
 has-unicode@^2.0.0:
   version "2.0.1"
@@ -2256,8 +2365,8 @@ is-binary-path@^1.0.0:
     binary-extensions "^1.0.0"
 
 is-buffer@^1.0.2:
-  version "1.1.4"
-  resolved is-buffer-1.1.4.tgz#cfc86ccd5dc5a52fa80489111c6920c457e2d98b
+  version "1.1.5"
+  resolved is-buffer-1.1.5.tgz#1f3b26ef613b214b88cbca23cc6c01d87961eecc
 
 is-builtin-module@^1.0.0:
   version "1.0.0"
@@ -2749,6 +2858,42 @@ loader-utils@^1.0.2:
     emojis-list "^2.0.0"
     json5 "^0.5.0"
 
+lodash._basecopy@^3.0.0:
+  version "3.0.1"
+  resolved lodash._basecopy-3.0.1.tgz#8da0e6a876cf344c0ad8a54882111dd3c5c7ca36
+
+lodash._basetostring@^3.0.0:
+  version "3.0.1"
+  resolved lodash._basetostring-3.0.1.tgz#d1861d877f824a52f669832dcaf3ee15566a07d5
+
+lodash._basevalues@^3.0.0:
+  version "3.0.0"
+  resolved lodash._basevalues-3.0.0.tgz#5b775762802bde3d3297503e26300820fdf661b7
+
+lodash._getnative@^3.0.0:
+  version "3.9.1"
+  resolved lodash._getnative-3.9.1.tgz#570bc7dede46d61cdcde687d65d3eecbaa3aaff5
+
+lodash._isiterateecall@^3.0.0:
+  version "3.0.9"
+  resolved lodash._isiterateecall-3.0.9.tgz#5203ad7ba425fae842460e696db9cf3e6aac057c
+
+lodash._reescape@^3.0.0:
+  version "3.0.0"
+  resolved lodash._reescape-3.0.0.tgz#2b1d6f5dfe07c8a355753e5f27fac7f1cde1616a
+
+lodash._reevaluate@^3.0.0:
+  version "3.0.0"
+  resolved lodash._reevaluate-3.0.0.tgz#58bc74c40664953ae0b124d806996daca431e2ed
+
+lodash._reinterpolate@^3.0.0:
+  version "3.0.0"
+  resolved lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d
+
+lodash._root@^3.0.0:
+  version "3.0.1"
+  resolved lodash._root-3.0.1.tgz#fba1c4524c19ee9a5f8136b4609f017cf4ded692
+
 lodash.assign@^4.0.3, lodash.assign@^4.0.6, lodash.assign@^4.2.0:
   version "4.2.0"
   resolved lodash.assign-4.2.0.tgz#0d99f3ccd7a6d261d19bdaeb9245005d285808e7
@@ -2761,6 +2906,28 @@ lodash.clonedeep@^4.3.2, lodash.clonedeep@^4.5.0:
   version "4.5.0"
   resolved lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef
 
+lodash.escape@^3.0.0:
+  version "3.2.0"
+  resolved lodash.escape-3.2.0.tgz#995ee0dc18c1b48cc92effae71a10aab5b487698
+  dependencies:
+    lodash._root "^3.0.0"
+
+lodash.isarguments@^3.0.0:
+  version "3.1.0"
+  resolved lodash.isarguments-3.1.0.tgz#2f573d85c6a24289ff00663b491c1d338ff3458a
+
+lodash.isarray@^3.0.0:
+  version "3.0.4"
+  resolved lodash.isarray-3.0.4.tgz#79e4eb88c36a8122af86f844aa9bcd851b5fbb55
+
+lodash.keys@^3.0.0:
+  version "3.1.2"
+  resolved lodash.keys-3.1.2.tgz#4dbc0472b156be50a0b286855d1bd0b0c656098a
+  dependencies:
+    lodash._getnative "^3.0.0"
+    lodash.isarguments "^3.0.0"
+    lodash.isarray "^3.0.0"
+
 lodash.memoize@^4.1.0:
   version "4.1.2"
   resolved lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe
@@ -2768,6 +2935,31 @@ lodash.memoize@^4.1.0:
 lodash.mergewith@^4.6.0:
   version "4.6.0"
   resolved lodash.mergewith-4.6.0.tgz#150cf0a16791f5903b8891eab154609274bdea55
+
+lodash.restparam@^3.0.0:
+  version "3.6.1"
+  resolved lodash.restparam-3.6.1.tgz#936a4e309ef330a7645ed4145986c85ae5b20805
+
+lodash.template@^3.0.0:
+  version "3.6.2"
+  resolved lodash.template-3.6.2.tgz#f8cdecc6169a255be9098ae8b0c53d378931d14f
+  dependencies:
+    lodash._basecopy "^3.0.0"
+    lodash._basetostring "^3.0.0"
+    lodash._basevalues "^3.0.0"
+    lodash._isiterateecall "^3.0.0"
+    lodash._reinterpolate "^3.0.0"
+    lodash.escape "^3.0.0"
+    lodash.keys "^3.0.0"
+    lodash.restparam "^3.0.0"
+    lodash.templatesettings "^3.0.0"
+
+lodash.templatesettings@^3.0.0:
+  version "3.1.1"
+  resolved lodash.templatesettings-3.1.1.tgz#fb307844753b66b9f1afa54e262c745307dba8e5
+  dependencies:
+    lodash._reinterpolate "^3.0.0"
+    lodash.escape "^3.0.0"
 
 lodash.uniq@^4.3.0:
   version "4.5.0"
@@ -2784,6 +2976,10 @@ lodash@^4.0.0, lodash@^4.11.1, lodash@^4.14.0, lodash@^4.17.2, lodash@^4.17.3, l
 lodash@~4.16.4:
   version "4.16.6"
   resolved lodash-4.16.6.tgz#d22c9ac660288f3843e16ba7d2b5d06cca27d777
+
+lodash@~4.2.0:
+  version "4.2.1"
+  resolved lodash-4.2.1.tgz#171fdcfbbc30d689c544cd18c0529f56de6c1aa9
 
 log4js@^0.6.31:
   version "0.6.38"
@@ -2947,13 +3143,17 @@ minimalistic-crypto-utils@^1.0.0, minimalistic-crypto-utils@^1.0.1:
   dependencies:
     brace-expansion "^1.0.0"
 
-minimist@0.0.8, minimist@~0.0.1:
+minimist@0.0.8:
   version "0.0.8"
   resolved minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d
 
-minimist@^1.1.3, minimist@^1.2.0:
+minimist@^1.1.0, minimist@^1.1.3, minimist@^1.2.0:
   version "1.2.0"
   resolved minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284
+
+minimist@~0.0.1:
+  version "0.0.10"
+  resolved minimist-0.0.10.tgz#de3f98543dbf96082be48ad1a0c7cda836301dcf
 
 mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1:
   version "0.5.1"
@@ -2968,6 +3168,12 @@ ms@0.7.1:
 ms@0.7.2:
   version "0.7.2"
   resolved ms-0.7.2.tgz#ae25cf2512b3885a1d95d7f037868d8431124765
+
+multipipe@^0.1.2:
+  version "0.1.2"
+  resolved multipipe-0.1.2.tgz#2a8f2ddf70eed564dff2d57f1e1a137d9f05078b
+  dependencies:
+    duplexer2 "0.0.2"
 
 mute-stream@0.0.7:
   version "0.0.7"
@@ -3161,6 +3367,10 @@ oauth-sign@~0.8.1:
 object-assign@4.1.0, object-assign@^4.0.1, object-assign@^4.1.0:
   version "4.1.0"
   resolved object-assign-4.1.0.tgz#7a3b3d0e98063d43f4c03f2e8ae6cd51a86883a0
+
+object-assign@^3.0.0:
+  version "3.0.0"
+  resolved object-assign-3.0.0.tgz#9bedd5ca0897949bca47e7ff408062d549f587f2
 
 object-component@0.0.3:
   version "0.0.3"
@@ -3739,7 +3949,7 @@ qjobs@^1.1.4:
   version "1.1.5"
   resolved qjobs-1.1.5.tgz#659de9f2cf8dcc27a1481276f205377272382e73
 
-qs@6.4.0, qs@~6.4.0:
+qs@6.4.0, qs@^6.1.0, qs@~6.4.0:
   version "6.4.0"
   resolved qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233
 
@@ -3829,7 +4039,7 @@ readable-stream@1.0, readable-stream@~1.0.2:
     isarray "0.0.1"
     string_decoder "~0.10.x"
 
-readable-stream@^2.0.0, "readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.0.1, readable-stream@^2.0.2, readable-stream@^2.0.5, readable-stream@^2.1.0:
+readable-stream@^2.0.0, "readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.0.1, readable-stream@^2.0.2, readable-stream@^2.0.5, readable-stream@^2.1.0, readable-stream@^2.1.5:
   version "2.2.3"
   resolved readable-stream-2.2.3.tgz#9cf49463985df016c8ae8813097a9293a9b33729
   dependencies:
@@ -3840,6 +4050,15 @@ readable-stream@^2.0.0, "readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.
     process-nextick-args "~1.0.6"
     string_decoder "~0.10.x"
     util-deprecate "~1.0.1"
+
+readable-stream@~1.1.9:
+  version "1.1.14"
+  resolved readable-stream-1.1.14.tgz#7cf4c54ef648e3813084c636dd2079e166c081d9
+  dependencies:
+    core-util-is "~1.0.0"
+    inherits "~2.0.1"
+    isarray "0.0.1"
+    string_decoder "~0.10.x"
 
 readable-stream@~2.1.4:
   version "2.1.5"
@@ -3963,6 +4182,10 @@ repeating@^2.0.0:
   resolved repeating-2.0.1.tgz#5214c53a926d3552707527fbab415dbc08d06dda
   dependencies:
     is-finite "^1.0.0"
+
+replace-ext@0.0.1:
+  version "0.0.1"
+  resolved replace-ext-0.0.1.tgz#29bbd92078a739f0bcce2b4ee41e837953522924
 
 request@2, request@^2.61.0, request@^2.72.0, request@^2.78.0, request@^2.79.0:
   version "2.81.0"
@@ -4334,11 +4557,15 @@ source-map@0.5.x, source-map@^0.5.0, source-map@^0.5.3, source-map@^0.5.6, sourc
   version "0.5.6"
   resolved source-map-0.5.6.tgz#75ce38f52bf0733c5a7f0c118d81334a2bb5f412
 
-source-map@^0.4.4:
+source-map@^0.4.4, source-map@~0.4.1:
   version "0.4.4"
   resolved source-map-0.4.4.tgz#eba4f5da9c0dc999de68032d8b4f76173652036b
   dependencies:
     amdefine ">=0.0.4"
+
+sparkles@^1.0.0:
+  version "1.0.0"
+  resolved sparkles-1.0.0.tgz#1acbbfb592436d10bbe8f785b7cc6f82815012c3
 
 spdx-correct@~1.0.0:
   version "1.0.2"
@@ -4409,6 +4636,10 @@ stream-browserify@^2.0.1:
   dependencies:
     inherits "~2.0.1"
     readable-stream "^2.0.2"
+
+stream-consume@^0.1.0:
+  version "0.1.0"
+  resolved stream-consume-0.1.0.tgz#a41ead1a6d6081ceb79f65b061901b6d8f3d1d0f
 
 stream-http@^2.3.1:
   version "2.6.3"
@@ -4552,9 +4783,20 @@ temp@0.8.3:
     os-tmpdir "^1.0.0"
     rimraf "~2.2.6"
 
+through2@^2.0.0:
+  version "2.0.3"
+  resolved through2-2.0.3.tgz#0004569b37c7c74ba39c43f3ced78d1ad94140be
+  dependencies:
+    readable-stream "^2.1.5"
+    xtend "~4.0.1"
+
 through@X.X.X, through@^2.3.6:
   version "2.3.8"
   resolved through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5
+
+time-stamp@^1.0.0:
+  version "1.0.1"
+  resolved time-stamp-1.0.1.tgz#9f4bd23559c9365966f3302dbba2b07c6b99b151
 
 timed-out@^3.0.0:
   version "3.1.3"
@@ -4653,15 +4895,6 @@ tsickle@^0.2:
     source-map "^0.5.6"
     source-map-support "^0.4.2"
 
-tsickle@^0.21.0:
-  version "0.21.5"
-  resolved tsickle-0.21.5.tgz#341c1834b9d293c8cbffc295a86a1e46268ed22f
-  dependencies:
-    minimist "^1.2.0"
-    mkdirp "^0.5.1"
-    source-map "^0.5.6"
-    source-map-support "^0.4.2"
-
 tslint@~4.4.2:
   version "4.4.2"
   resolved tslint-4.4.2.tgz#b14cb79ae039c72471ab4c2627226b940dda19c6
@@ -4696,13 +4929,13 @@ type-is@~1.6.14:
     media-typer "0.3.0"
     mime-types "~2.1.13"
 
-"typescript@>=2.0.0 <2.2.0", typescript@~2.0.0:
-  version "2.0.10"
-  resolved typescript-2.0.10.tgz#ccdd4ed86fd5550a407101a0814012e1b3fac3dd
+"typescript@>=2.0.0 <2.2.0", typescript@~2.1.0:
+  version "2.1.6"
+  resolved typescript-2.1.6.tgz#40c7e6e9e5da7961b7718b55505f9cac9487a607
 
 uglify-js@2.8.x, uglify-js@^2.6, uglify-js@^2.7.5:
-  version "2.8.11"
-  resolved uglify-js-2.8.11.tgz#11a51c43d810b47bc00aee4d512cb3947ddd1ac4
+  version "2.8.12"
+  resolved uglify-js-2.8.12.tgz#8a50f5d482243650b7108f6080aa3a6afe2a6c55
   dependencies:
     source-map "~0.5.1"
     uglify-to-browserify "~1.0.0"
@@ -4869,6 +5102,14 @@ verror@1.3.6:
   dependencies:
     extsprintf "1.0.2"
 
+vinyl@^0.5.0:
+  version "0.5.3"
+  resolved vinyl-0.5.3.tgz#b0455b38fc5e0cf30d4325132e461970c2091cde
+  dependencies:
+    clone "^1.0.0"
+    clone-stats "^0.0.1"
+    replace-ext "0.0.1"
+
 vlq@^0.2.1:
   version "0.2.1"
   resolved vlq-0.2.1.tgz#14439d711891e682535467f8587c5630e4222a6c
@@ -4926,6 +5167,13 @@ webdriver-manager@^12.0.1:
     rimraf "^2.5.2"
     semver "^5.3.0"
     xml2js "^0.4.17"
+
+webpack-core@^0.6.8:
+  version "0.6.9"
+  resolved webpack-core-0.6.9.tgz#fc571588c8558da77be9efb6debdc5a3b172bdc2
+  dependencies:
+    source-list-map "~0.1.7"
+    source-map "~0.4.1"
 
 webpack-dev-middleware@^1.0.11, webpack-dev-middleware@^1.9.0:
   version "1.10.1"
@@ -5120,7 +5368,7 @@ xmlhttprequest-ssl@1.5.3:
   version "1.5.3"
   resolved xmlhttprequest-ssl-1.5.3.tgz#185a888c04eca46c3e4070d99f7b49de3528992d
 
-xtend@^4.0.0:
+xtend@^4.0.0, xtend@~4.0.1:
   version "4.0.1"
   resolved xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af
 

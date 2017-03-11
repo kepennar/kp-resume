@@ -1,0 +1,9 @@
+@import '../../styles/colors';
+
+.expert {
+  color: darken($secondary-txt-color, 5%);
+  font-weight: bold;
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
