@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+
 import { ContentService } from '../content.service';
 
 @Component({
@@ -7,11 +9,11 @@ import { ContentService } from '../content.service';
   styleUrls: ['./expertises.component.scss']
 })
 export class ExpertisesComponent implements OnInit {
-  private expertises = [];
+  private expertises: Observable<any>;
 
   constructor(private contentService: ContentService) { }
+
   ngOnInit() {
-    this.contentService.getExpertises()
-    .then(expertises => this.expertises = expertises);
+    this.expertises = this.contentService.getExpertises();
   }
 }
