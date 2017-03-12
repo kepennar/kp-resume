@@ -1,0 +1,42 @@
+@import '../../../styles/colors';
+
+:host {
+  background-color: #fff;
+  box-shadow: $shadow-panel;
+  margin: 1em auto;
+  padding: 24px;
+  transition: $shadow-transition;
+  will-change: box-shadow;
+
+  .container {
+    color: lighten($main-txt-color, 10%);
+    width: 100%;
+
+    &.last-experience {
+      padding: 35px 24px;
+
+      .last-exp-label {
+        margin: auto;
+        text-transform: uppercase;
+      }
+    }
+
+    .subtitle {
+      font-weight: bold;
+    }
+
+    fieldset {
+      border: 0;
+      box-shadow: $shadow-panel;
+      margin-top: 20px;
+    }
+
+    .pull-left {
+      float: left;
+    }
+
+    .pull-right {
+      float: right;
+    }
+  }
+}

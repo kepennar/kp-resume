@@ -1,0 +1,9 @@
+@import '../../styles/colors';
+
+:host {
+  background-color: white;
+  box-shadow: $shadow-panel;
+  display: block;
+  width: 100%;
+  z-index: 5;
+}

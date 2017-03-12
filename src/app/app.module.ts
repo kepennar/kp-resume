@@ -1,22 +1,36 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { MaterialModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+import { ContentService } from './content.service';
 
 import { AppComponent } from './app.component';
+import { MyNameComponent } from './my-name/my-name.component';
+
+import { ExpertisesComponent } from './expertises/expertises.component';
+import { ExpertiseComponent } from './expertises/expertise/expertise.component';
+
+import { TrainingsComponent } from './trainings/trainings.component';
+import { ExperiencesComponent } from './experiences/experiences.component';
+import { ExperienceComponent } from './experiences/experience/experience.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MyNameComponent,
+    ExpertisesComponent,
+    ExpertiseComponent,
+    TrainingsComponent,
+    ExperiencesComponent,
+    ExperienceComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     HttpModule,
-    MaterialModule.forRoot(),
+    FlexLayoutModule,
   ],
-  providers: [],
+  providers: [ContentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

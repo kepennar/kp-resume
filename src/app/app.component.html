@@ -1,15 +1,25 @@
-<md-sidenav-container class="container">
-  <md-sidenav #sidenav class="sidenav" >
-    SideNav
-  </md-sidenav>
-  <div class="sidenav-content">
-    <h1>
-      {{title}}
-    </h1>
-
-    <button md-raised-button (click)="sidenav.open()">
-      Angular Material works!
-      <md-icon>done</md-icon>
-    </button>
-  </div>
-</md-sidenav-container>
+ <div fxLayout="row" fxLayout.xs="column" fxFill>
+    <!--<div fxLayout fxFlex >-->
+        <div class="side"  >
+          <h2>Resume</h2>
+          <app-expertises
+            fxLayout="column"
+            fxLayout.xs="row"
+            fxLayoutAlign="center top"
+            fxLayoutAlign.xs="center center"
+          ></app-expertises>
+          <app-trainings
+            fxLayout="column"
+            fxLayout.xs="row"
+            fxLayoutAlign="center top"
+            fxLayoutAlign.xs="center center"
+          ></app-trainings>
+        </div>
+        <div class="main" fxFlex="80" fxLayout="column" fxLayoutAlign="top top">
+          <app-my-name></app-my-name>
+          <div class="content">
+            <app-experiences></app-experiences>
+          </div>
+        </div>
+    <!--</div>-->
+</div>

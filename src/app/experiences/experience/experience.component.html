@@ -1,0 +1,19 @@
+<div class="container" [ngClass]="{'last-experience': lastExperience}" fxLayout="column" fxLayoutAlign="center top">
+  <h2 *ngIf="lastExperience" class="last-exp-label">
+    Dernière expérience
+  </h2>
+  <h3>{{experience.title}}</h3>
+  <div class="subtitle">
+    <span class="pull-left">{{experience.duration}}</span>
+    <span class="pull-right">{{experience.company}} - {{experience.project}}</span>
+  </div>
+  <fieldset>
+    <legend>{{experience.description}}</legend>
+    <ul>
+      <li *ngFor="let task of experience.tasks">{{task}}</li>
+    </ul>
+    <span *ngFor="let techEnv of experience.techEnvs; let isLast = last">
+      {{techEnv}} <span *ngIf="!isLast"> &nbsp; / &nbsp;</span>
+    </span>
+  </fieldset>
+</div>

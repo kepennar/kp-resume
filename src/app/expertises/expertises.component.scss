@@ -1,0 +1,19 @@
+@import '../../styles/colors';
+@import '../../styles/responsive';
+
+.expert {
+  color: darken($secondary-txt-color, 5%);
+  font-weight: bold;
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media #{$mobile-breakpoint} {
+  :host {
+    h3 {
+      font-size: .8em;
+      margin-right: 10px;
+    }
+  }
+}

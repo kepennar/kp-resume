@@ -1,0 +1,29 @@
+@import '../../styles/colors';
+@import '../../styles/responsive';
+
+:host {
+  padding-bottom: 1em;
+
+  .trainer {
+    color: darken($secondary-txt-color, 5%);
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .training {
+    display: inline-block;
+  }
+}
+
+@media #{$mobile-breakpoint} {
+  :host {
+    h3 {
+      font-size: .8em;
+      margin-right: 10px;
+    }
+    .training {
+      font-size: .7em;
+    }
+  }
+}

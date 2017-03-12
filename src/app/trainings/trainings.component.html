@@ -1,0 +1,13 @@
+<h3 class="trainer">Formateur</h3>
+
+<div fxLayout="column" fxLayoutAlign="center top" fxFlex="100">
+  <div>
+    <div
+      *ngFor="let training of trainings | async; let isLast = last"
+      class="training"
+    >
+      {{training.name}} <span *ngIf="!isLast"> &nbsp; / &nbsp;</span>
+    </div>
+
+  </div>
+</div>
