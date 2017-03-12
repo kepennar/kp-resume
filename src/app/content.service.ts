@@ -1,31 +1,37 @@
 import { Injectable } from '@angular/core';
-import contentful from 'contentful';
+import { Http } from '@angular/http';
+
+import { Observable } from 'rxjs/Observable';
 
 import { environment } from '../environments/environment';
 
 @Injectable()
 export class ContentService {
-  client;
 
-  constructor() {
-    this.client = contentful.createClient({
-      space: environment.contentful.spaceId,
-      accessToken: environment.contentful.accessToken,
-    });
+  constructor(private http: Http) { }
+
+  getExpertises(): Observable<any> {
+    return this.getContentFulEntries('expertises')
+    .map(expertise => expertise.sort(this.sortPerRank));
   }
 
-  getExpertises(): Promise<any> {
-    return this.client.getEntries({content_type: 'expertises'})
-    .then(resp => resp.items.map(entry => entry.fields));
+  getTrainings(): Observable<any> {
+    return this.getContentFulEntries('trainings');
   }
 
-  getTrainings(): Promise<any> {
-    return this.client.getEntries({content_type: 'trainings'})
-    .then(resp => resp.items.map(entry => entry.fields));
+  getExperiences(): Observable<any> {
+    return this.getContentFulEntries('experiences')
+    .map(experiences => experiences.sort(this.sortPerRank))
   }
 
-  getExperiences(): Promise<any> {
-    return this.client.getEntries({content_type: 'experiences'})
-    .then(resp => resp.items.map(entry => entry.fields));
+  private getContentFulEntries(contentType) {
+    const { baseUrl, spaceId, accessToken } = environment.contentful;
+
+    return this.http.get(`${baseUrl}/spaces/${spaceId}/entries?access_token=${accessToken}&content_type=${contentType}`)
+    .map(resp => resp.json())
+    .map(entries => entries.items.map(entry => entry.fields));
+  }
+  private sortPerRank(entry1, entry2) {
+    return entry1.rank - entry2.rank;
   }
 }

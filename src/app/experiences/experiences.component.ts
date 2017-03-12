@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+
 import { ContentService } from '../content.service';
 
 @Component({
@@ -7,12 +9,11 @@ import { ContentService } from '../content.service';
   styleUrls: ['./experiences.component.scss']
 })
 export class ExperiencesComponent implements OnInit {
-  private experiences = [];
+  private experiences: Observable<any>;
   constructor(private contentService: ContentService) { }
 
   ngOnInit() {
-    this.contentService.getExperiences()
-    .then(experiences => this.experiences = experiences);
+    this.experiences = this.contentService.getExperiences()
   }
 
 
