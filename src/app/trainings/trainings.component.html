@@ -2,12 +2,10 @@
 
 <div fxLayout="column" fxLayoutAlign="center top" fxFlex="100">
   <div>
-    <div
-      *ngFor="let training of trainings | async; let isLast = last"
-      class="training"
+    <app-tech
+      *ngFor="let training of trainings | async"
+      [tech]="training"
     >
-      {{training.name}} <span *ngIf="!isLast"> &nbsp; / &nbsp;</span>
-    </div>
-
+    </app-tech>
   </div>
 </div>

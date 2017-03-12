@@ -25,10 +25,17 @@
       font-weight: bold;
     }
 
-    fieldset {
+    .details {
       border: 0;
       box-shadow: $shadow-panel;
       margin-top: 20px;
+      padding: 1em;
+
+      .description {
+        font-size: 1.1em;
+        font-weight: bold;
+      }
+
     }
 
     .pull-left {
