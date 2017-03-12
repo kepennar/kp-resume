@@ -363,6 +363,12 @@ async-foreach@^0.1.3:
   version "0.1.3"
   resolved async-foreach-0.1.3.tgz#36121f845c0578172de419a97dbeb1d16ec34542
 
+async@2.1.2:
+  version "2.1.2"
+  resolved async-2.1.2.tgz#612a4ab45ef42a70cde806bad86ee6db047e8385
+  dependencies:
+    lodash "^4.14.0"
+
 async@^0.9.0, async@~0.9.0:
   version "0.9.2"
   resolved async-0.9.2.tgz#aea74d5e61c1f899613bf64bda66d4c78f2fd17d
@@ -431,18 +437,12 @@ babel-messages@^6.23.0:
   dependencies:
     babel-runtime "^6.22.0"
 
-babel-runtime@^6.18.0, babel-runtime@^6.22.0, babel-runtime@^6.3.19:
+babel-runtime@^6.18.0, babel-runtime@^6.22.0:
   version "6.23.0"
   resolved babel-runtime-6.23.0.tgz#0a9489f144de70efb3ce4300accdb329e2fc543b
   dependencies:
     core-js "^2.4.0"
     regenerator-runtime "^0.10.0"
-
-babel-runtime@~6.3.19:
-  version "6.3.19"
-  resolved babel-runtime-6.3.19.tgz#f2db696c3c8c379881e2a53665e02187074dc681
-  dependencies:
-    core-js "^1.2.0"
 
 babel-template@^6.16.0:
   version "6.23.0"
@@ -871,6 +871,12 @@ codelyzer@~2.0.0:
     source-map "^0.5.6"
     sprintf-js "^1.0.3"
 
+collections@^0.2.0:
+  version "0.2.2"
+  resolved collections-0.2.2.tgz#1f23026b2ef36f927eecc901e99c5f0d48fa334e
+  dependencies:
+    weak-map "1.0.0"
+
 color-convert@^1.3.0:
   version "1.9.0"
   resolved color-convert-1.9.0.tgz#1accf97dd739b983bf994d56fec8f95853641b7a
@@ -919,7 +925,7 @@ combined-stream@^1.0.5, combined-stream@~1.0.5:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@2.9.x:
+commander@2.9.0, commander@2.9.x:
   version "2.9.0"
   resolved commander-2.9.0.tgz#9c99094176e12240cb22d6c5146098400fe0f7d4
   dependencies:
@@ -1017,24 +1023,6 @@ content-type@~1.0.2:
   version "1.0.2"
   resolved content-type-1.0.2.tgz#b7d113aee7a8dd27bd21133c4dc2529df1721eed
 
-contentful-sdk-core@~2.5.0:
-  version "2.5.0"
-  resolved contentful-sdk-core-2.5.0.tgz#e1cad6b7660654bb1095b385fd5abc225199273f
-  dependencies:
-    babel-runtime "^6.3.19"
-    follow-redirects "0.0.7"
-    lodash "^4.2.0"
-    qs "^6.1.0"
-
-contentful@^3.8.1:
-  version "3.8.1"
-  resolved contentful-3.8.1.tgz#ba532c0032a165c22a251ce964a7f39d4011c21b
-  dependencies:
-    babel-runtime "~6.3.19"
-    contentful-sdk-core "~2.5.0"
-    json-stringify-safe "~5.0.1"
-    lodash "~4.2.0"
-
 convert-source-map@^1.3.0:
   version "1.4.0"
   resolved convert-source-map-1.4.0.tgz#e3dad195bf61bfe13a7a3c73e9876ec14a0268f3
@@ -1046,10 +1034,6 @@ cookie-signature@1.0.6:
 cookie@0.3.1:
   version "0.3.1"
   resolved cookie-0.3.1.tgz#e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb
-
-core-js@^1.2.0:
-  version "1.2.7"
-  resolved core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636
 
 core-js@^2.2.0, core-js@^2.4.0, core-js@^2.4.1:
   version "2.4.1"
@@ -1773,13 +1757,6 @@ flatten@^1.0.2:
   version "1.0.2"
   resolved flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782
 
-follow-redirects@0.0.7:
-  version "0.0.7"
-  resolved follow-redirects-0.0.7.tgz#34b90bab2a911aa347571da90f22bd36ecd8a919
-  dependencies:
-    debug "^2.2.0"
-    stream-consume "^0.1.0"
-
 for-in@^1.0.1:
   version "1.0.2"
   resolved for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80
@@ -1897,6 +1874,18 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
+gh-pages@^0.12.0:
+  version "0.12.0"
+  resolved gh-pages-0.12.0.tgz#d951e3ed98b85699d4b0418eb1a15b1a04988dc1
+  dependencies:
+    async "2.1.2"
+    commander "2.9.0"
+    globby "^6.1.0"
+    graceful-fs "4.1.10"
+    q "1.4.1"
+    q-io "1.13.2"
+    rimraf "^2.5.4"
+
 glob-base@^0.3.0:
   version "0.3.0"
   resolved glob-base-0.3.0.tgz#dbb164f6221b1c0b1ccf82aea328b497df0ea3c4
@@ -1957,6 +1946,16 @@ globby@^5.0.0:
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
 
+globby@^6.1.0:
+  version "6.1.0"
+  resolved globby-6.1.0.tgz#f5a6d70e8395e21c858fb0489d64df02424d506c
+  dependencies:
+    array-union "^1.0.1"
+    glob "^7.0.3"
+    object-assign "^4.0.1"
+    pify "^2.0.0"
+    pinkie-promise "^2.0.0"
+
 globule@^1.0.0:
   version "1.1.0"
   resolved globule-1.1.0.tgz#c49352e4dc183d85893ee825385eb994bb6df45f
@@ -1998,6 +1997,10 @@ got@^5.0.0:
     timed-out "^3.0.0"
     unzip-response "^1.0.2"
     url-parse-lax "^1.0.0"
+
+graceful-fs@4.1.10:
+  version "4.1.10"
+  resolved graceful-fs-4.1.10.tgz#f2d720c22092f743228775c75e3612632501f131
 
 graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6:
   version "4.1.11"
@@ -2977,10 +2980,6 @@ lodash@~4.16.4:
   version "4.16.6"
   resolved lodash-4.16.6.tgz#d22c9ac660288f3843e16ba7d2b5d06cca27d777
 
-lodash@~4.2.0:
-  version "4.2.1"
-  resolved lodash-4.2.1.tgz#171fdcfbbc30d689c544cd18c0529f56de6c1aa9
-
 log4js@^0.6.31:
   version "0.6.38"
   resolved log4js-0.6.38.tgz#2c494116695d6fb25480943d3fc872e662a522fd
@@ -3124,6 +3123,10 @@ mime-types@^2.1.12, mime-types@~2.1.11, mime-types@~2.1.13, mime-types@~2.1.7:
 mime@1.3.4, mime@1.3.x, mime@^1.2.11, mime@^1.3.4:
   version "1.3.4"
   resolved mime-1.3.4.tgz#115f9e3b6b3daf2959983cb38f149a2d40eb5d53
+
+mimeparse@^0.1.4:
+  version "0.1.4"
+  resolved mimeparse-0.1.4.tgz#dafb02752370fd226093ae3152c271af01ac254a
 
 mimic-fn@^1.0.0:
   version "1.1.0"
@@ -3941,7 +3944,18 @@ punycode@^1.2.4, punycode@^1.4.1:
   version "1.4.1"
   resolved punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e
 
-q@1.4.1, q@^1.1.2, q@^1.4.1:
+q-io@1.13.2:
+  version "1.13.2"
+  resolved q-io-1.13.2.tgz#eea130d481ddb5e1aa1bc5a66855f7391d06f003
+  dependencies:
+    collections "^0.2.0"
+    mime "^1.2.11"
+    mimeparse "^0.1.4"
+    q "^1.0.1"
+    qs "^1.2.1"
+    url2 "^0.0.0"
+
+q@1.4.1, q@^1.0.1, q@^1.1.2, q@^1.4.1:
   version "1.4.1"
   resolved q-1.4.1.tgz#55705bcd93c5f3673530c2c2cbc0c2b3addc286e
 
@@ -3949,9 +3963,13 @@ qjobs@^1.1.4:
   version "1.1.5"
   resolved qjobs-1.1.5.tgz#659de9f2cf8dcc27a1481276f205377272382e73
 
-qs@6.4.0, qs@^6.1.0, qs@~6.4.0:
+qs@6.4.0, qs@~6.4.0:
   version "6.4.0"
   resolved qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233
+
+qs@^1.2.1:
+  version "1.2.2"
+  resolved qs-1.2.2.tgz#19b57ff24dc2a99ce1f8bdf6afcda59f8ef61f88
 
 query-string@^4.1.0:
   version "4.3.2"
@@ -4637,10 +4655,6 @@ stream-browserify@^2.0.1:
     inherits "~2.0.1"
     readable-stream "^2.0.2"
 
-stream-consume@^0.1.0:
-  version "0.1.0"
-  resolved stream-consume-0.1.0.tgz#a41ead1a6d6081ceb79f65b061901b6d8f3d1d0f
-
 stream-http@^2.3.1:
   version "2.6.3"
   resolved stream-http-2.6.3.tgz#4c3ddbf9635968ea2cfd4e48d43de5def2625ac3
@@ -5027,6 +5041,10 @@ url-parse@^1.1.1:
     querystringify "0.0.x"
     requires-port "1.0.x"
 
+url2@^0.0.0:
+  version "0.0.0"
+  resolved url2-0.0.0.tgz#4eaabd1d5c3ac90d62ab4485c998422865a04b1a
+
 url@^0.11.0:
   version "0.11.0"
   resolved url-0.11.0.tgz#3838e97cfc60521eb73c525a8e55bfdd9e2e28f1
@@ -5144,6 +5162,10 @@ wbuf@^1.1.0, wbuf@^1.4.0:
   resolved wbuf-1.7.2.tgz#d697b99f1f59512df2751be42769c1580b5801fe
   dependencies:
     minimalistic-assert "^1.0.0"
+
+weak-map@1.0.0:
+  version "1.0.0"
+  resolved weak-map-1.0.0.tgz#b66e56a9df0bd25a76bbf1b514db129080614a37
 
 webdriver-js-extender@^1.0.0:
   version "1.0.0"
