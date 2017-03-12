@@ -1,4 +1,5 @@
 @import '../../../styles/colors';
+@import '../../../styles/responsive';
 
 :host {
   border-bottom: 1px solid $secondary-txt-color;
@@ -16,5 +17,16 @@
 
   .tech {
     display: inline-block;
+  }
+}
+
+@media #{$mobile-breakpoint} {
+  :host {
+    h3 {
+      font-size: .8em;
+    }
+    .tech {
+      font-size: .7em;
+    }
   }
 }

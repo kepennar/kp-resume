@@ -1,9 +1,19 @@
- <div fxLayout="column" fxFill>
-    <div fxLayout fxFlex >
+ <div fxLayout="row" fxLayout.xs="column" fxFill>
+    <!--<div fxLayout fxFlex >-->
         <div class="side"  >
           <h2>Resume</h2>
-          <app-expertises fxLayout="column" fxLayoutAlign="center top"></app-expertises>
-          <app-trainings fxLayout="column" fxLayoutAlign="center top"></app-trainings>
+          <app-expertises
+            fxLayout="column"
+            fxLayout.xs="row"
+            fxLayoutAlign="center top"
+            fxLayoutAlign.xs="center center"
+          ></app-expertises>
+          <app-trainings
+            fxLayout="column"
+            fxLayout.xs="row"
+            fxLayoutAlign="center top"
+            fxLayoutAlign.xs="center center"
+          ></app-trainings>
         </div>
         <div class="main" fxFlex="80" fxLayout="column" fxLayoutAlign="top top">
           <app-my-name></app-my-name>
@@ -11,5 +21,5 @@
             <app-experiences></app-experiences>
           </div>
         </div>
-    </div>
+    <!--</div>-->
 </div>
