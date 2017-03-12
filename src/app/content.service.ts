@@ -27,7 +27,7 @@ export class ContentService {
   private getContentFulEntries(contentType) {
     const { baseUrl, spaceId, accessToken } = environment.contentful;
 
-    return this.http.get(`${baseUrl}/spaces/${spaceId}/entries?access_token=${accessToken}&content_type=${contentType}`)
+    return this.http.get(`${baseUrl}/spaces/${spaceId}/entries?access_token=${accessToken}&content_type=${contentType}&include=1`)
     .map(resp => resp.json())
     .map(entries => entries.items.map(entry => entry.fields));
   }

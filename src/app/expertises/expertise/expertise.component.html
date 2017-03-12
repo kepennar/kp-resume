@@ -1,15 +1,13 @@
-<div fxLayout="column" fxLayoutAlign="center top" fxFlex="100">
+<div fxLayout="column" fxFlex="100">
   <div class="category">
 
-    <h3><i class="material-icons">{{expertise.icon}}</i>  {{expertise.category}}</h3>
+    <h3>{{expertise.category}}</h3>
   </div>
   <div>
-    <div
-      *ngFor="let tech of expertise.techs; let isLast = last"
-      class="tech"
+    <app-tech
+      *ngFor="let tech of expertise.techs"
+      [tech]="tech"
     >
-      {{tech}} <span *ngIf="!isLast"> &nbsp; / &nbsp;</span>
-    </div>
-
+    </app-tech>
   </div>
 </div>

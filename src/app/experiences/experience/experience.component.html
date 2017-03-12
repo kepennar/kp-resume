@@ -7,13 +7,13 @@
     <span class="pull-left">{{experience.duration}}</span>
     <span class="pull-right">{{experience.company}} - {{experience.project}}</span>
   </div>
-  <fieldset>
-    <legend>{{experience.description}}</legend>
+  <div class="details">
+    <div class="description">{{experience.description}}</div>
     <ul>
       <li *ngFor="let task of experience.tasks">{{task}}</li>
     </ul>
     <span *ngFor="let techEnv of experience.techEnvs; let isLast = last">
       {{techEnv}} <span *ngIf="!isLast"> &nbsp; / &nbsp;</span>
     </span>
-  </fieldset>
+  </div>
 </div>

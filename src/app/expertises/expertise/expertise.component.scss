@@ -22,11 +22,9 @@
 
 @media #{$small-breakpoint} {
   :host {
+    border-bottom: 0;
     h3 {
       font-size: .8em;
-    }
-    .tech {
-      font-size: .7em;
     }
   }
 }
@@ -35,9 +33,6 @@
   :host {
     h3 {
       font-size: 1em;
-    }
-    .tech {
-      font-size: .9em;
     }
   }
 }
