@@ -16,7 +16,7 @@
   }
 }
 
-@media #{$mobile-breakpoint} {
+@media #{$small-breakpoint} {
   :host {
     h3 {
       font-size: .8em;

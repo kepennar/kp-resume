@@ -9,11 +9,19 @@
   text-transform: uppercase;
 }
 
-@media #{$mobile-breakpoint} {
+@media #{$small-breakpoint} {
   :host {
     h3 {
       font-size: .8em;
       margin-right: 10px;
+    }
+  }
+}
+
+@media #{$medium-breakpoint} {
+  .side {
+    h3 {
+      font-size: 1em;
     }
   }
 }

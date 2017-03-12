@@ -1,25 +1,28 @@
  <div fxLayout="row" fxLayout.xs="column" fxFill>
-    <!--<div fxLayout fxFlex >-->
-        <div class="side"  >
-          <h2>Resume</h2>
-          <app-expertises
-            fxLayout="column"
-            fxLayout.xs="row"
-            fxLayoutAlign="center top"
-            fxLayoutAlign.xs="center center"
-          ></app-expertises>
-          <app-trainings
-            fxLayout="column"
-            fxLayout.xs="row"
-            fxLayoutAlign="center top"
-            fxLayoutAlign.xs="center center"
-          ></app-trainings>
+      <div class="side"  >
+        <h2>Resume</h2>
+        <app-expertises
+          fxLayout="column"
+          fxLayout.xs="row"
+          fxLayoutAlign="center top"
+          fxLayoutAlign.xs="center center"
+        ></app-expertises>
+        <app-trainings
+          fxLayout="column"
+          fxLayout.xs="row"
+          fxLayoutAlign="center top"
+          fxLayoutAlign.xs="center center"
+        ></app-trainings>
+      </div>
+      <div class="main" fxFlex="80" fxLayout="column" fxLayoutAlign="top top">
+        <app-my-name></app-my-name>
+        <div class="content">
+          <app-experiences></app-experiences>
+          <app-credits
+            fxLayout="row"
+            fxLayoutAlign="center bottom"
+          >
+          </app-credits>
         </div>
-        <div class="main" fxFlex="80" fxLayout="column" fxLayoutAlign="top top">
-          <app-my-name></app-my-name>
-          <div class="content">
-            <app-experiences></app-experiences>
-          </div>
-        </div>
-    <!--</div>-->
+      </div>
 </div>
