@@ -1,0 +1,14 @@
+@import '../../styles/colors';
+
+:host {
+  background-color: #fff;
+  box-shadow: $shadow-panel;
+  padding: 5px;
+  transition: $shadow-transition;
+  width: 100%;
+  will-change: box-shadow;
+
+  p {
+    margin-right: 5px;
+  }
+}
