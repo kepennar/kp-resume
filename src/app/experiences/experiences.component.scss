@@ -4,7 +4,7 @@ app-experience {
   width: 90%;
 }
 
-@media #{$mobile-breakpoint} {
+@media #{$small-breakpoint} {
   :host {
     font-size: .8em;
   }

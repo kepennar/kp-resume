@@ -35,7 +35,7 @@
   }
 }
 
-@media #{$mobile-breakpoint} {
+@media #{$small-breakpoint} {
   .side {
     width: auto;
     h2 {
@@ -47,5 +47,15 @@
       min-height: 100%;
       overflow-y: visible;
     }
+  }
 }
+
+@media #{$medium-breakpoint} {
+  .side {
+    overflow-y: scroll;
+
+    h2 {
+      font-size: 1.2em;
+    }
+  }
 }
