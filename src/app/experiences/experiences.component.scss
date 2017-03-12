@@ -1,4 +1,11 @@
+@import '../../styles/responsive';
 
 app-experience {
   width: 90%;
+}
+
+@media #{$mobile-breakpoint} {
+  :host {
+    font-size: .8em;
+  }
 }
