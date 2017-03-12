@@ -11,10 +11,14 @@ export class MyNameComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    const timeline =  anime.timeline({ autoplay: true });
+    const timeline =  anime.timeline({
+      autoplay: true,
+      loop: true,
+      direction: 'alternate',
+    });
     timeline.add({
       targets: 'path#myname-stroke',
-      'stroke-width': 2,
+      'stroke-width': 1,
       easing: 'easeInQuint',
       duration: 800,
     })
@@ -23,19 +27,6 @@ export class MyNameComponent implements OnInit {
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: 'easeInQuint',
       duration: 5000,
-    })
-    .add({
-        targets: 'path#myname-fill',
-        opacity: .8,
-        duration: 2000,
-        offset: '-=1000'
-    })
-    .add({
-        targets: 'path#myname-stroke',
-        'stroke-width': 0,
-        duration: 1000,
-        easing: 'easeOutSine',
-        offset: '-=1000'
     });
   }
 

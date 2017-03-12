@@ -3,13 +3,15 @@
 // Include the base styles for Angular Material core. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 $main-txt-color: #333;
-$secondary-txt-color: #EFEFEF;
+$secondary-txt-color: #333;
 
-$main-bg-color: #EFEFEF;
-$secondary-bg-color: #2196f3;
+$main-bg-color: #444;
+$secondary-bg-color: #4fc5c2;
 
 $border-color: #999;
 
-$shadow-side: 3px 0 3px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
-$shadow-panel:  0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
-$shadow-transition: box-shadow .28s cubic-bezier(.4,0,.2,1);
+$txt-shadow: 1px 0 9px #b4b4b4;
+
+$shadow-side: 3px 0 3px -2px rgba(0, 0, 0, .4), 0 2px 2px 0 rgba(0, 0, 0, .3), 0 1px 5px 0 rgba(0, 0, 0, .3);
+$shadow-panel:  0 3px 1px -2px rgba(0, 0, 0, .4), 0 2px 2px 0 rgba(0, 0, 0, .3), 0 1px 5px 0 rgba(0, 0, 0, .3);
+$shadow-transition: box-shadow .28s cubic-bezier(.4, 0, .2, 1);

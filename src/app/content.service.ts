@@ -21,7 +21,7 @@ export class ContentService {
 
   getExperiences(): Observable<any> {
     return this.getContentFulEntries('experiences')
-    .map(experiences => experiences.sort(this.sortPerRank))
+    .map(experiences => experiences.sort(this.sortPerRank));
   }
 
   private getContentFulEntries(contentType) {
