@@ -1,4 +1,5 @@
 @import '../../styles/colors';
+@import '../../styles/responsive';
 
 :host {
   background-color: #fff;
@@ -10,5 +11,17 @@
 
   p {
     margin-right: 5px;
+  }
+}
+
+@media #{$small-breakpoint} {
+  :host {
+    font-size: .8em;
+  }
+}
+
+@media #{$medium-breakpoint} {
+  :host {
+    font-size: .9em;
   }
 }
