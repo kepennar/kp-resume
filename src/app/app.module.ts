@@ -8,13 +8,10 @@ import { ContentService } from './content.service';
 import { AppComponent } from './app.component';
 import { MyNameComponent } from './my-name/my-name.component';
 
-import { ExpertisesComponent } from './expertises/expertises.component';
-import { ExpertiseComponent } from './expertises/expertise/expertise.component';
+import { ExpertisesComponent, ExpertiseComponent } from './expertises/index';
 import { TechComponent } from './tech/tech.component';
-
 import { TrainingsComponent } from './trainings/trainings.component';
-import { ExperiencesComponent } from './experiences/experiences.component';
-import { ExperienceComponent } from './experiences/experience/experience.component';
+import { ExperiencesComponent, ExperienceComponent } from './experiences/index';
 import { CreditsComponent } from './credits/credits.component';
 
 

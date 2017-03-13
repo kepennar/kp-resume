@@ -8,8 +8,6 @@ import anime from 'animejs';
 })
 export class MyNameComponent implements OnInit {
 
-  constructor() { }
-
   ngOnInit() {
     const timeline =  anime.timeline({
       autoplay: true,
