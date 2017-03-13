@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 
 import { ContentService } from '../content.service';
@@ -6,7 +6,8 @@ import { ContentService } from '../content.service';
 @Component({
   selector: 'app-experiences',
   templateUrl: './experiences.component.html',
-  styleUrls: ['./experiences.component.scss']
+  styleUrls: ['./experiences.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ExperiencesComponent implements OnInit {
   private experiences: Observable<any>;
