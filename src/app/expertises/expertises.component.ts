@@ -10,9 +10,9 @@ import { ContentService } from '../content.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ExpertisesComponent implements OnInit {
-  private expertises: Observable<any>;
+  public expertises: Observable<any>;
 
-  constructor(private contentService: ContentService) { }
+  constructor(private contentService: ContentService) {}
 
   ngOnInit() {
     this.expertises = this.contentService.getExpertises();

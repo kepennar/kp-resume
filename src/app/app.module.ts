@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { ContentService } from './content.service';
@@ -14,7 +14,6 @@ import { TrainingsComponent } from './trainings/trainings.component';
 import { ExperiencesComponent, ExperienceComponent } from './experiences/index';
 import { CreditsComponent } from './credits/credits.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,14 +24,10 @@ import { CreditsComponent } from './credits/credits.component';
     ExperiencesComponent,
     ExperienceComponent,
     CreditsComponent,
-    TechComponent,
+    TechComponent
   ],
-  imports: [
-    BrowserModule,
-    HttpModule,
-    FlexLayoutModule,
-  ],
+  imports: [BrowserModule, HttpClientModule, FlexLayoutModule],
   providers: [ContentService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

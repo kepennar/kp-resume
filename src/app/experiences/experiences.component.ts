@@ -7,15 +7,13 @@ import { ContentService } from '../content.service';
   selector: 'app-experiences',
   templateUrl: './experiences.component.html',
   styleUrls: ['./experiences.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ExperiencesComponent implements OnInit {
-  private experiences: Observable<any>;
-  constructor(private contentService: ContentService) { }
+  public experiences: Observable<any>;
+  constructor(private contentService: ContentService) {}
 
   ngOnInit() {
-    this.experiences = this.contentService.getExperiences()
+    this.experiences = this.contentService.getExperiences();
   }
-
-
 }

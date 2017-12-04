@@ -10,7 +10,7 @@ import { ContentService } from '../content.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TrainingsComponent implements OnInit {
-  private trainings: Observable<any>;
+  public trainings: Observable<any>;
 
   constructor(private contentService: ContentService) {}
 
