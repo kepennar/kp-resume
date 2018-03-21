@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-import { Observable } from 'rxjs/Observable';
+import { map } from 'rxjs/operators';
 
 import { environment } from '../environments/environment';
 
@@ -9,19 +9,19 @@ import { environment } from '../environments/environment';
 export class ContentService {
   constructor(private http: HttpClient) {}
 
-  getExpertises(): Observable<any> {
-    return this.getContentFulEntries('expertises').map(expertise =>
-      expertise.sort(this.sortPerRank)
+  getExpertises() {
+    return this.getContentFulEntries('expertises').pipe(
+      map(expertise => expertise.sort(this.sortPerRank))
     );
   }
 
-  getTrainings(): Observable<any> {
+  getTrainings() {
     return this.getContentFulEntries('trainings');
   }
 
-  getExperiences(): Observable<any> {
-    return this.getContentFulEntries('experiences').map(experiences =>
-      experiences.sort(this.sortPerRank)
+  getExperiences() {
+    return this.getContentFulEntries('experiences').pipe(
+      map(experiences => experiences.sort(this.sortPerRank))
     );
   }
 
@@ -30,11 +30,9 @@ export class ContentService {
 
     return this.http
       .get<any>(
-        `${baseUrl}/spaces/${spaceId}/entries?access_token=${
-          accessToken
-        }&content_type=${contentType}&include=1`
+        `${baseUrl}/spaces/${spaceId}/entries?access_token=${accessToken}&content_type=${contentType}&include=1`
       )
-      .map(entries => entries.items.map(entry => entry.fields));
+      .pipe(map(entries => entries.items.map(entry => entry.fields)));
   }
   private sortPerRank(entry1, entry2) {
     return entry1.rank - entry2.rank;

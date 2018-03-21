@@ -5,7 +5,13 @@ import { ContentService } from '../content.service';
 
 @Component({
   selector: 'app-experiences',
-  templateUrl: './experiences.component.html',
+  template: `
+    <app-experience
+      *ngFor="let experience of experiences | async; let first = first" [experience]="experience"
+      fxLayoutAlign="center top" [lastExperience]="first"
+    >
+    </app-experience>
+  `,
   styleUrls: ['./experiences.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
