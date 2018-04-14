@@ -1,5 +1,6 @@
 export const environment = {
   production: true,
+  serviceWorker: true,
   contentful: {
     baseUrl: 'https://cdn.contentful.com',
     spaceId: '6ww1yr2i4grh',

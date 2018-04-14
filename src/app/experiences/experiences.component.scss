@@ -1,11 +1,20 @@
 @import '../../styles/responsive';
 
-app-experience {
-  width: 90%;
-}
+:host {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
 
-@media #{$small-breakpoint} {
-  :host {
-    font-size: .8em;
+  app-experience {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    width: 90%;
+  }
+
+  @media #{$small-breakpoint} {
+    :host {
+      font-size: 0.8em;
+    }
   }
 }

@@ -9,10 +9,20 @@
   text-transform: uppercase;
 }
 
+app-expertise {
+  flex: 1 1 100%;
+  box-sizing: border-box;
+  margin: 0px;
+  width: 100%;
+  align-items: stretch;
+  flex-direction: row;
+  display: flex;
+}
+
 @media #{$small-breakpoint} {
   :host {
     h3 {
-      font-size: .8em;
+      font-size: 0.8em;
       margin-right: 10px;
     }
   }

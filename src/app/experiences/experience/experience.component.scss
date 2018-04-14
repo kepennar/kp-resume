@@ -1,4 +1,5 @@
 @import '../../../styles/colors';
+@import '../../../styles/responsive';
 
 :host {
   background-color: #fff;
@@ -9,6 +10,9 @@
   will-change: box-shadow;
 
   .container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     color: lighten($main-txt-color, 10%);
     width: 100%;
 
@@ -35,7 +39,6 @@
         font-size: 1.1em;
         font-weight: bold;
       }
-
     }
 
     .pull-left {
@@ -45,5 +48,9 @@
     .pull-right {
       float: right;
     }
+  }
+
+  @media #{$small-breakpoint} {
+    padding: 10px;
   }
 }

@@ -2,6 +2,8 @@
 @import '../../../styles/responsive';
 
 :host {
+  display: flex;
+
   border-bottom: 1px solid $secondary-txt-color;
   padding-bottom: 1em;
 
@@ -19,7 +21,7 @@
   :host {
     border-bottom: 0;
     h3 {
-      font-size: .8em;
+      font-size: 0.8em;
     }
   }
 }

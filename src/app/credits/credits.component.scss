@@ -6,7 +6,6 @@
   box-shadow: $shadow-panel;
   padding: 5px;
   transition: $shadow-transition;
-  width: 100%;
   will-change: box-shadow;
 
   p {
@@ -16,12 +15,12 @@
 
 @media #{$small-breakpoint} {
   :host {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 }
 
 @media #{$medium-breakpoint} {
   :host {
-    font-size: .9em;
+    font-size: 0.9em;
   }
 }

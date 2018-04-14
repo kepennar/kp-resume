@@ -1,0 +1,43 @@
+@import '../../styles/colors';
+@import '../../styles/responsive';
+
+:host {
+  display: flex;
+  flex-direction: row;
+
+  .side {
+    background-color: $secondary-bg-color;
+    box-shadow: $shadow-side;
+    color: $secondary-txt-color;
+    font-weight: normal;
+    padding: 20px;
+    text-shadow: $txt-shadow;
+    width: 20%;
+    z-index: 10;
+
+    h2 {
+      font-size: 3em;
+    }
+  }
+
+  @media #{$small-breakpoint} {
+    flex-direction: column;
+
+    .side {
+      width: auto;
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  @media #{$medium-breakpoint} {
+    .side {
+      overflow-y: scroll;
+
+      h2 {
+        font-size: 1.2em;
+      }
+    }
+  }
+}

@@ -2,6 +2,7 @@
 
 # compiled output
 /dist
+/kp-resume
 /tmp
 
 # dependencies

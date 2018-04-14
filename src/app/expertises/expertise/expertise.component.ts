@@ -3,7 +3,7 @@ import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 @Component({
   selector: 'app-expertise',
   template: `
-  <div fxLayout="column" fxFlex="100">
+  <div >
     <div class="category">
       <h3>{{expertise.category}}</h3>
     </div>

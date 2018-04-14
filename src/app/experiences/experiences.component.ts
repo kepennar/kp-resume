@@ -7,8 +7,9 @@ import { ContentService } from '../content.service';
   selector: 'app-experiences',
   template: `
     <app-experience
-      *ngFor="let experience of experiences | async; let first = first" [experience]="experience"
-      fxLayoutAlign="center top" [lastExperience]="first"
+      *ngFor="let experience of experiences | async; let first = first"
+      [experience]="experience"
+      [lastExperience]="first"
     >
     </app-experience>
   `,

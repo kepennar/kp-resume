@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgZone } from '@angular/core';
 import anime from 'animejs';
 
 @Component({
@@ -7,24 +7,28 @@ import anime from 'animejs';
   styleUrls: ['./my-name.component.scss']
 })
 export class MyNameComponent implements OnInit {
+  constructor(private _ngZone: NgZone) {}
+
   ngOnInit() {
-    const timeline = anime.timeline({
-      autoplay: true,
-      loop: true,
-      direction: 'alternate'
+    this._ngZone.runOutsideAngular(() => {
+      anime
+        .timeline({
+          autoplay: true,
+          loop: true,
+          direction: 'alternate'
+        })
+        .add({
+          targets: 'path#myname-stroke',
+          'stroke-width': 1,
+          easing: 'easeInQuint',
+          duration: 800
+        })
+        .add({
+          targets: 'path#myname-stroke',
+          strokeDashoffset: [anime.setDashoffset, 0],
+          easing: 'easeInQuint',
+          duration: 5000
+        });
     });
-    timeline
-      .add({
-        targets: 'path#myname-stroke',
-        'stroke-width': 1,
-        easing: 'easeInQuint',
-        duration: 800
-      })
-      .add({
-        targets: 'path#myname-stroke',
-        strokeDashoffset: [anime.setDashoffset, 0],
-        easing: 'easeInQuint',
-        duration: 5000
-      });
   }
 }

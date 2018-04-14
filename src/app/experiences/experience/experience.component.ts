@@ -3,7 +3,7 @@ import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 @Component({
   selector: 'app-experience',
   template: `
-  <div class="container" [ngClass]="{'last-experience': lastExperience}" fxLayout="column" fxLayoutAlign="center top">
+  <div class="container" [ngClass]="{'last-experience': lastExperience}">
     <h2 *ngIf="lastExperience" class="last-exp-label">
       Dernière expérience
     </h2>
