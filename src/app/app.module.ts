@@ -29,7 +29,7 @@ import { TrainingsComponent } from './trainings/trainings.component';
     TechComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'kp-resume' }),
     HttpClientModule,
     ServiceWorkerModule.register('./ngsw-worker.js', {
       enabled: environment.serviceWorker

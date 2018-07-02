@@ -3,7 +3,7 @@
   "short_name": "Kevin Pennarun Resume",
   "theme_color": "#4fc5c2",
   "background_color": "#fafafa",
-  "display": "browser",
+  "display": "minimal-ui",
   "Scope": "/kp-resume",
   "start_url": "/kp-resume",
   "icons": [
